@@ -1,0 +1,63 @@
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #1e293b;
+      background: #f8fafc;
+      line-height: 1.6;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+
+    /* NAV */
+    header {
+      background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      position: sticky; top: 0; 
+    }
+    .nav-content { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; }
+    .logo-section { display: flex; align-items: center; gap: 16px; }
+    .site-title { font-family: 'Poppins', sans-serif; font-weight: 600; margin: 0; }
+    .site-tagline { font-size: 0.8rem; color: #64748b; margin: 0; }
+    nav { display: flex; gap: 1.5rem; align-items: center; }
+    nav a { text-decoration: none; color: #1e293b; font-size: 14px; }
+    nav a:hover { color: #059669; }
+    .btn-primary { background: #059669; color: #fff !important; padding: 0.5rem 1rem; border-radius: 6px; }
+    .btn-outline { border: 1px solid #cbd5e1; padding: 0.5rem 16px; border-radius: 6px; text-decoration: none; color: #1e293b; }
+    .btn-outline:hover { border-color: #059669; color: #059669; }
+
+    /* HERO */
+    .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; padding: 64px 0; }
+    .hero h2 { font-family: 'Poppins', sans-serif; font-size: 2.5rem; line-height: 1.2; margin-top: 0; }
+    .hero-buttons { margin: 1.5rem 0; display: flex; gap: 16px; }
+   
+    .hero-card { background: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .hero-card h3 { margin-top: 0; }
+    .hero-card img { margin-top: 1rem; border-radius: 6px; width: 100%; }
+
+    /* FEATURES */
+    .features { background: #f1f5f9; padding: 3rem 0; }
+    .features-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+    .feature { background: #fff; padding: 1.5rem; border-radius: 8px; }
+
+    /* HOW */
+    .how { padding: 3rem 0; }
+    .how-steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin-top: 2rem; }
+    .how-step { background: #ecfdf5; padding: 1rem; border-radius: 8px; display: flex; gap: 1rem; }
+    .how-step span { background: #059669; color: #fff; font-weight: bold; display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; }
+
+    /* ABOUT */
+    .about { background: #ecfdf5; padding: 3rem 0; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .about img { border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .about ul { margin-top: 1rem; padding-left: 16px; }
+    .about li { list-style: disc; }
+
+    /* FOOTER */
+    footer { background: #fff; border-top: 1px solid #e2e8f0; padding: 3rem 0 1rem; margin-top: 3rem; }
+    .footer-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; }
+    footer h4 { font-weight: 600; margin-top: 0; }
+    footer ul { padding-left: 1rem; }
+    footer ul li { list-style: disc; }
+    .footer-bottom { text-align: center; margin-top: 2rem; font-size: 0.8rem; color: #64748b; }
+    .farmimages{
+        width: 50px;
+
+    }

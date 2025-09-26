@@ -164,7 +164,7 @@ def buyer_dashboard(buyer_phone):
         if choice == '1':
             update_buyer_details(buyer_phone)
         elif choice == '2':
-            view_listed_products_p(buyer_phone)
+            view_listed_products(buyer_phone)
         elif choice == '3':
             print("Logging out...")
             break
@@ -231,14 +231,15 @@ def update_buyer_details(buyer_phone):
     else:
         print("Buyer not found or no updates made.")
     
-def view_listed_products_p(buyer_phone):
+def view_listed_products(buyer_phone):
     print("\n---  Listed Products ---")
     found_products = False
     with open(products_csv, "r", newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
+            if row["FARMER PHONE"] == buyer_phone:
                 found_products = True
-                print(f"Product: {row['PRODUCT']}, Quantity: {row['QUANTITY']}, Price: {row['PRICE']},  Farmer Phone number: {row['FARMER PHONE']}")
+                print(f"Product: {row['PRODUCT']}, Quantity: {row['QUANTITY']}, Price: {row['PRICE']}, {row['FARMER PHONE']}")
 
     if found_products == False:
         print("There are no products listed yet.")
